@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=Megrim&family=MonteCarlo&display=swap');
+
+
+body{
+    font-family: 'DM Serif Text', serif;
+    background-color: black; 
+    color: white; 
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav{
+    display: flex;
+    padding: 40px;
+    position:fixed;
+    top: 0px;
+    justify-content: flex-end;
+    font-family: "DM Serif Text", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 26px;
+    align-items: end;
+    padding-right: 150px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d42f2f;
+    text-shadow: 0 0 10px #d42f2f;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; 
+    animation: slowMove 30s linear infinite;
+}
+
+.layer1 {
+    background-image: url('assets/durbar.jpg');
+    z-index: 1;
+}
+
+.layer2 {
+    background-image: url('assets/calaber.webp');
+    z-index: 2;
+    animation-delay: 15s; 
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,10,10,0.5); 
+    z-index: 3;
+}
+
+.text {
+    position: relative;
+    z-index: 5;
+    animation: fadeIn 3s ease-out forwards;
+}
+
+.text h1 {
+    margin-bottom: 20px;
+    font-size: 100px;
+    color: #f9d923; 
+    text-shadow:  #000B58 10px 0 5px;
+}
+
+.text h3 {
+    font-family: "DM Serif Text", serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow:  #000B58 8px 0 5px;
+}
+
+#btn {
+  margin-top: 1em;
+  padding: 0.6em 1.2em;
+  border-radius: 10px;
+  border: none;
+  background-color: #000B58;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: transform 0.2s;
+  font-family: "DM Serif Text", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#btn:hover {
+    background-color: #d42f2f;
+    box-shadow: 0 0 20px #d42f2f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slowMove {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(-20px);}
+    100% { transform: translateY(0);}
+}
+
+.footer {
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 25px 10px;
+  border-top: 2px solid #ffae42;
+  letter-spacing: 0.5px;
+}
+
+.content p {
+  margin: 5px 0;
+  font-size: 15px;
+}
