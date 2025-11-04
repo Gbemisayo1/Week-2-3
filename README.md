@@ -37,6 +37,9 @@ In this exercise, I created a website that reflects my future vision for what I 
 - **assets/**  
   A folder containing all image files and other media resources used in the project.
 
+- **Reflection on design.pdf**  
+  A pdf that explains the reasoning behind the website and who it is meant to empower 
+
 note that all the css file have consistent styling for repeting elements like the body, header and navigation styling. 
 
 ---
